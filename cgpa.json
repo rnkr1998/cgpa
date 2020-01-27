@@ -30,9 +30,9 @@
    }
    ,
    {
-    "code":"PHR111",
-    "name":"Cosmetology",
+    "Code":"PHR111",
+    "Name":"Cosmetology",
     "Grade":"A+",
-    "credits":3
+    "Credits":3
    }
 ]

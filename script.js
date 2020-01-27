@@ -1,27 +1,52 @@
-var s;
+
 
 function load()
 {
-    var option="<table>";
-    
-    $.getJSON("cgpa.json", function(json)
+    var option=`<table>
+    <tr>
+                <th>COURSE CODE</th> 
+                 <th>SUBJECT</th>
+                 <th>GRADE</th> 
+                 <th>CREDITS</th>
+        </tr>`;
+    var x=new XMLHttpRequest();
+    x.open("GET","https://raw.githubusercontent.com/rnkr1998/cgpa/master/cgpa.json",true);
+x.onreadystatechange=function()
+{
+    if(x.readyState==4)
     {
-      console.log(json);
-    })
+      console.log("server response genereated") ;
+    }
+  
     
-    /*
+}
+x.send();
+x.onload=function()
+{
+    var data=JSON.parse(x.responseText);
+    
+    console.log(data);
+
+    
     for(k in data)
     {
-        console.log(data[0]);
+      
         option +=
-        `<tr>`+data.Code+`<td>`+data.Code[k]+`<td></tr>
-        <tr>`+data.Name+`<td>`+data.Name[k]+`<td></tr>
-        <tr>`+data.Grade+`<td>`+data.Grade[k]+`<td></tr>
-        <tr>`+data.Credits+`<td>`+data.Credits[k]+`<td></tr>`
-         
+      
+       `<tr>
+                  <td>`+data[k].Code+`</td>
+                  <td>`+data[k].Name+`</td>
+                  <td>`+data[k].Grade+`</td>
+                  <td>`+data[k].Credits+`</td>
+        <tr>`
+
+
+
     }
-    option += "</table>"
+    
+    
+    option += `</table>`
     document.getElementById("content").innerHTML=option;       
        
-*/
+  }
 }
