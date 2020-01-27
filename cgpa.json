@@ -1,0 +1,38 @@
+
+ [
+    {
+  "Code":"CSE439",
+  "Name":"capstone-2",
+  "Grade":"I",
+  "Credits":8
+     
+   }
+,
+   {
+    "Code":"INT418",
+    "Name":"Mobile Computing",
+    "Grade":"A",
+    "Credits":3
+   }
+   ,
+   {
+    "Code":"ECE363",
+    "Name":"Creating an Iot device",
+    "Grade":"A+",
+    "Credits":2
+   }
+   ,
+   {
+    "Code":"GEO802",
+    "Name":"Basis of gis and remote sensing",
+    "Grade":"A+",
+    "Credits":3
+   }
+   ,
+   {
+    "code":"PHR111",
+    "name":"Cosmetology",
+    "Grade":"A+",
+    "credits":3
+   }
+]
