@@ -10,17 +10,45 @@
     <script type="text/javascript" src="script.js"></script>
     <style>
     table, th, td {
-                      border: 1px solid black;
+                      border: 3px solid black;
                       text-align: center;
-                      margin:20px;
+                      padding:20px;
+                      border:2px solid red;
+                      border-radius: 5px;
+                      
+                 }
+                 button{
+                     color:snow;
+                     background: teal;
+                     padding:11px;
+                     border:2px solid gold;
+                     margin:10px;
+                     
+                 }
+                 button:hover{
+                    transform: scale(1.05);
+
+                 }
+
+                 th{
+                     color:darkred;
+                 }
+                 tr{
+                     color:indigo;
+                     background:gainsboro;
                  }
                  table{
-                     width:100%;
+                     width:50%;
+                     margin:30px;
+                     margin-left:280px;
+                  
+                     
                  }
     </style>
-    <body>
-        <h1>My Cgpa</h1>
+    <body style="text-align: center; margin-top:50px">
+        <h1 style="color:seagreen"> My CGPA</h1>
         <button id="button" onclick="load()">Click me for result</button>
+        <button onclick="myfun()">Clear data</button>
         <div id="content">
             
                 

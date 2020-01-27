@@ -50,3 +50,8 @@ x.onload=function()
        
   }
 }
+
+function myfun()
+{
+  var a=document.getElementById("content").innerHTML=" ";
+}
